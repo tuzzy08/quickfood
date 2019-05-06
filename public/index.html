@@ -10,6 +10,20 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.css" type="text/css">
+    <!-- CDN's -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
+  <!-- COMMON SCRIPTS -->
+  <script src="/assets/js/common_scripts_min.js"></script>
+  <script src="/assets/js/functions.js"></script>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -34,5 +48,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $("#js-rotating").Morphext({
+          animation: "fadeIn", // Overrides default "bounceIn"
+          separator: ",", // Overrides default ","
+          speed: 2300, // Overrides default 2000
+          complete: function () {
+              // Overrides default empty function
+          }
+      });
+    </script>
   </body>
 </html>
