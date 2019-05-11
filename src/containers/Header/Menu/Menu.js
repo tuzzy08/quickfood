@@ -14,16 +14,16 @@ class Menu extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col--md-4 col-sm-4 col-xs-4">
-                                <a href="index.html" id="logo" >
-                                <img src="img/logo.png" width="190" height="23" alt="" data-retina="true" className="hidden-xs" />
-                                <img src="img/logo_mobile.png" width="59" height="23" alt="" data-retina="true" className="hidden-lg hidden-md hidden-sm" />
+                                <a href="index.html" id="logo">
+                                <img src="assets/img/logo.png" width="190" height="23" alt="" data-retina="true" className="hidden-xs"/>
+                                <img src="assets/img/logo_mobile.png" width="59" height="23" alt="" data-retina="true" className="hidden-lg hidden-md hidden-sm"/>
                                 </a>
                             </div>
                             <nav className="col--md-8 col-sm-8 col-xs-8">
                             <a className="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
                             <div className="main-menu">
                                 <div id="header_menu">
-                                    <img src="img/logo.png" width="190" height="23" alt="" data-retina="true"/>
+                                    <img src="assets/img/logo.png" width="190" height="23" alt="" data-retina="true"/>
                                 </div>
                                 <a href="#" className="open_close" id="close_in"><i className="icon_close"></i></a>
                                 <ul>
@@ -76,10 +76,10 @@ class Menu extends Component {
                                     <li><a href="#0" data-toggle="modal" data-target="#login_2">Login</a></li>
                                     <li><a href="#0">Purchase this template</a></li>
                                 </ul>
-                            </div><!-- End main-menu -->
+                            </div>
                             </nav>
-                        </div><!-- End row -->
-                    </div><!-- End container -->
+                        </div>
+                    </div>
                 </header>
             </Wrapper>
         )
