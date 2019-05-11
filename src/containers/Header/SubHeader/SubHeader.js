@@ -5,15 +5,15 @@ const SubHeader = (props) => {
     const counterData = [
         {
             label: 'Restaurant',
-            amount: 2650
+            amount: '2650'
         },
         {
             label: 'People Served',
-            amount: 1230
+            amount: '1230'
         },
         {
             label: 'Average Users',
-            amount: 5436
+            amount: '5436'
         }
     ]
     return (
