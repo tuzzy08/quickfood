@@ -11,8 +11,14 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/base.css" type="text/css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/jquery.cookiebar.css" type="text/css" />
-    <!-- CDN's -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/jquery.cookiebar.css" type="text/css" /><!-- Radio and check inputs -->
+    <link href="%PUBLIC_URL%/assets/css/skins/square/grey.css" rel="stylesheet">
+    
+    <!-- Radio and check inputs -->
+    <link href="%PUBLIC_URL%/assets/css/skins/square/grey.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/assets/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/assets/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" >
+
   
 
     <!--
@@ -60,6 +66,50 @@
         fixed: true
       });
       });
+</script>
+
+<!-- Additional Scripts -->
+<!-- SPECIFIC SCRIPTS -->
+<script  src="%PUBLIC_URL%/assets/js/cat_nav_mobile.js"></script>
+<script>$('#cat_nav').mobileMenu();</script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="%PUBLIC_URL%/assets/js/map.js"></script>
+<script src="%PUBLIC_URL%/assets/js/infobox.js"></script>
+<script src="%PUBLIC_URL%/assets/js/ion.rangeSlider.js"></script>
+<script>
+    $(function () {
+		 'use strict';
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 15,
+            from: 0,
+            to:5,
+            type: 'double',
+            step: 1,
+            prefix: "Km ",
+            grid: true
+        });
+    });
+</script>
+<script src="%PUBLIC_URL%/assets/js/theia-sticky-sidebar.js"></script>
+<script>
+    jQuery('#sidebar').theiaStickySidebar({
+      additionalMarginTop: 80
+    });
+</script>
+<script>
+$('#cat_nav a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			var target = this.hash;
+			var $target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top - 70
+			}, 900, 'swing', function () {
+				window.location.hash = target;
+			});
+		});
 </script>
   </body>
 </html>

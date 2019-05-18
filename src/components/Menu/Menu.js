@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import $ from 'jquery'
 import Wrapper from '../../hoc/Wrapper/Wrapper'
-import SubHeader from '../../containers/Header/SubHeader/SubHeader'
+// import SubHeader from '../../containers/Header/SubHeader/SubHeader'
 
 
 
@@ -66,6 +66,7 @@ class Menu extends Component {
                                 <ul>
                                     <li><NavLink to="/" exact> Home </NavLink></li>
                                     <li><NavLink to="/restaurants" exact> Restaurants </NavLink></li>
+                                    <li><NavLink to="/results" exact> Results </NavLink></li>
                                     <li><NavLink to="/about" exact> About us </NavLink></li>
                                     <li><NavLink to="/LOGIN" exact> Login </NavLink></li>
                                 </ul>
@@ -76,7 +77,7 @@ class Menu extends Component {
                         </div>
                     </div>
                 </header>
-                <SubHeader />
+                {/* <SubHeader /> */}
             </Wrapper>
         )
     }

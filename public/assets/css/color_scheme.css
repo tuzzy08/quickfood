@@ -8,7 +8,7 @@ a:hover,a:focus {color: #111;}
 
 /*-------- Content--------*/
 header.sticky{
-	background-color: #92278f;
+	background-color: #CE0322;
 }
 .features-content {
     background-color: #92278f;
@@ -26,14 +26,14 @@ header.sticky{
 /*-------- Buttons --------*/
 a.btn_1, .btn_1{
 	color:#fff;
-	background: #662d91;
+	background: #CE0322;
 }
 a.btn_1:hover, .btn_1:hover{
 	background:#333;
 }
 a.btn_full, .btn_full{
 	color:#fff;
-	background: #662d91;
+	background: #CE0322;
 }
 a.btn_full:hover, .btn_full:hover{
 	background:#333;

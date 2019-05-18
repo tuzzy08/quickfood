@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Preloader id="preloader" />
-      <Menu />
+      {/* <Menu /> */}
       <Content />
       <MobileMenuOverlay />
     </div>

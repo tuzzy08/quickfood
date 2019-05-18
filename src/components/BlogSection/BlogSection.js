@@ -50,7 +50,7 @@ const BlogSection = (props) => {
                 </div>
                 <div className="row">
                     { blogcards.map((card, index) => {
-                        return <BlogCard blogdata = { card } key={index} />
+                        return <BlogCard blogdata = {card} key={index} />
                     })}
             </div>
         </div>
