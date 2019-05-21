@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import Menu from '../../../components/Menu/Menu'
 import Header from '../Header/Header'
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
-import MealTypeOptions from './MealTypeOptions/MealTypeOptions'
+// import MealTypeOptions from './MealTypeOptions/MealTypeOptions'
 import MealMenu from './MealMenu/MealMenu'
 import Cart from '../Cart/Cart'
 import Wrapper from '../../../hoc/Wrapper/Wrapper'
 import { NavLink } from 'react-router-dom'
 
 class Detail extends Component  {
-
+    
     state = {
         activeGroup: 'starters',
         groups: [
@@ -43,14 +43,27 @@ class Detail extends Component  {
                 amount: 1500
             },
 
+        ],
+        cart: [
+            {
+							items: [
+								{ 
+									name: '',
+									quantity: '',
+									amount: ''
+							},
+							],
+							total: ''
+                
+            }
         ]
     }
 
     groupClickedHandler = (name) => {
-        let meals;
+        let meals
         switch(name) {
             case 'starters':
-                this.meals = [ { name: 'Potato chips',
+                meals = [ { name: 'Potato chips',
                         amount: 1000 },
                     {
                         name: 'Scrambled Eggs',
@@ -68,7 +81,7 @@ class Detail extends Component  {
                 ]
                 break;
             case 'main':
-                this.meals = [ { name: 'Egusi Soup',
+                meals = [ { name: 'Egusi Soup',
                 amount: 1000 },
                     {
                         name: 'Bitter Leaf Soup',
@@ -86,7 +99,7 @@ class Detail extends Component  {
                 ]
                 break;
                 case 'drinks':
-                this.meals = [ { name: 'Coke',
+                meals = [ { name: 'Coke',
                 amount: 250 },
                     {
                         name: 'Pepsi',
@@ -108,8 +121,8 @@ class Detail extends Component  {
         }
         const newState = { 
             ...this.state,
-            activeGroup: name.toString(),
-            meals: this.meals
+            activeGroup: name,
+            meals: meals
         }
         this.setState(newState)
     }
@@ -139,7 +152,7 @@ class Detail extends Component  {
                     </ul>
                 </div>
             </div>            
-            <MealMenu meals={this.state.meals}/>
+            <MealMenu meals={this.state.meals} mealGroup={this.state.activeGroup} />
             <Cart />
         </div>
         </div>

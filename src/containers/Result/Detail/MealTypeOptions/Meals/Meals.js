@@ -24,7 +24,7 @@ const Meals = (props) => {
      </tr>
      </thead>
      <tbody>
-         {props.meals.map((meal,index) => <Meal name={meal.name} amount={meal.amount} />)}
+         {props.meals.map((meal,index) => <Meal name={meal.name} amount={meal.amount} key={index} />)}
         {/* <Meal />      */}
      </tbody>
      </table>

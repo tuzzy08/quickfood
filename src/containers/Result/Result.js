@@ -9,6 +9,7 @@ import ResultItem from './ResultItem/ResultItem'
 
 
 
+
 class Result extends Component {
 
     state =  {
@@ -69,7 +70,7 @@ class Result extends Component {
         
 	</div>
 </div>
-					</Wrapper>
+</Wrapper>
 
             
         )

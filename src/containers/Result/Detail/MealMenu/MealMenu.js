@@ -8,7 +8,7 @@ const Menu = (props) => {
  <div className="col-md-6">
  <div className="box_style_2" id="main_menu">
      <h2 className="inner">Menu</h2>
-     <Meals mealGroup='starters' description = {description} meals={props.meals} />
+     <Meals  description = {description} meals={props.meals} mealGroup={props.mealGroup} />
  </div>
 </div>
 )   
